@@ -14,16 +14,18 @@ public class QuizController : MonoBehaviour {
 	private List<Image> objDisplayP;
 	private List<Text> objNameP;
 
+	public ToggleGroup[] toggleGroups;
+
 
 
 	void Start () 
 	{
-
+		//Debug.Log(objDisplayP.Count);
 		objNameP = objName;
 		objDisplayP = objDisplay;
-		//quiz1Private = quiz1;
-		RandomiseEntries();
-		Debug.Log(objDisplay.Count);
+		Debug.Log(objDisplayP.Count);
+		RandomiseEntries2();
+		Debug.Log(objDisplayP.Count);
 	}
 	
 	void Update () 
@@ -33,7 +35,6 @@ public class QuizController : MonoBehaviour {
 
 	void RandomiseEntries()
 	{
-		//int objDisplayToChoose = 0;
 
 		for(int i = 0; i < objDisplay.Count; i++)
 		{
@@ -48,8 +49,42 @@ public class QuizController : MonoBehaviour {
 			objDisplayP.RemoveAt(imgRandEntry);
 			objNameP.RemoveAt(nameRandEntry);
 
-			//objDisplayToChoose++;
 		}
+
+	}
+
+
+	void RandomiseEntries2()
+	{
+		int n = objDisplay.Count;
+		while(n > 1)
+		{
+			n--;
+			int k = Random.Range(0, n + 1);
+			int k2 = Random.Range(0, n + 1);
+			var displayValue = objDisplayP[k];
+			var nameValue = objNameP[k2];
+			objDisplayP[k] = objDisplayP[n];
+			objNameP[k2] = objNameP[n];
+			objDisplayP[n] = displayValue;
+			objNameP[n] = nameValue;
+			
+
+		}
+		SetEntries();
+	}
+
+	void SetEntries()
+	{
+		for(int i = 0; i < objDisplayP.Count; i++)
+		{
+			objDisplayP[i].sprite = quiz1[i].objImg;
+			objNameP[i].text = quiz1[i].objName;
+		}
+	}
+
+	public void ReceiveAnswer(int answerID)
+	{
 
 	}
 }
