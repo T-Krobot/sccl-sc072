@@ -21,7 +21,6 @@ public class QuizController : MonoBehaviour {
 	public ToggleGroup imageToggleGroup;
 	public ToggleGroup nameToggleGroup;
 
-	public LineRenderer lineRend;
 
 	int answeredCorrectly = 0;
 
@@ -36,11 +35,8 @@ public class QuizController : MonoBehaviour {
 		objNameP = objName;
 		objDisplayP = objDisplay;
 		Debug.Log(objDisplayP.Count);
-		RandomiseEntries2();
+		RandomiseEntries();
 		Debug.Log(objDisplayP.Count);
-		lineRend.startWidth = 0.3f;
-		lineRend.endWidth = 0.3f;
-		lineRend.positionCount = 2;
 	}
 	
 	void Update () 
@@ -48,7 +44,7 @@ public class QuizController : MonoBehaviour {
 		
 	}
 
-	void RandomiseEntries2()
+	void RandomiseEntries()
 	{
 		int n = objDisplay.Count;
 		while(n > 1)
@@ -56,10 +52,13 @@ public class QuizController : MonoBehaviour {
 			n--;
 			int k = Random.Range(0, n + 1);
 			int k2 = Random.Range(0, n + 1);
+
 			var displayValue = objDisplayP[k];
 			var nameValue = objNameP[k2];
+
 			objDisplayP[k] = objDisplayP[n];
 			objNameP[k2] = objNameP[n];
+
 			objDisplayP[n] = displayValue;
 			objNameP[n] = nameValue;
 			
@@ -83,35 +82,39 @@ public class QuizController : MonoBehaviour {
 
 	}
 
-	public void CompareAnswers()
+	public void CompareAnswers(int toggleID)
 	{
-		Toggle iToggle = null;
-		Toggle nToggle = null;
-		
-		if(nameToggleGroup.ActiveToggles().FirstOrDefault())
+		if(toggleScript.toggles[toggleID].isOn || nameToggleScript.toggles[toggleID].isOn)
 		{
-			nToggle = nameToggleGroup.ActiveToggles().FirstOrDefault();
-		}
-		
-		if(imageToggleGroup.ActiveToggles().FirstOrDefault())
-		{
-			iToggle = imageToggleGroup.ActiveToggles().FirstOrDefault();
-		}
-
-		if(nToggle && iToggle)
-		{
-			if(nToggle.GetComponentInChildren<Text>().text == iToggle.GetComponent<ValueHolder>().nameValue)
+			Debug.Log("compare answers");
+			Toggle iToggle = null;
+			Toggle nToggle = null;
+			
+			if(nameToggleGroup.ActiveToggles().FirstOrDefault())
 			{
-				Debug.Log("yes");
-				iToggle.interactable = false;
-				nToggle.interactable = false;
-				AllTogglesOff();
-				CorrectlyAnswered();
+				nToggle = nameToggleGroup.ActiveToggles().FirstOrDefault();
 			}
-			else
+			
+			if(imageToggleGroup.ActiveToggles().FirstOrDefault())
 			{
-				Debug.Log("no");
-				AllTogglesOff();
+				iToggle = imageToggleGroup.ActiveToggles().FirstOrDefault();
+			}
+
+			if(nToggle && iToggle)
+			{
+				if(nToggle.GetComponentInChildren<Text>().text == iToggle.GetComponent<ValueHolder>().nameValue)
+				{
+					Debug.Log("yes");
+					iToggle.interactable = false;
+					nToggle.interactable = false;
+					AllTogglesOff();
+					CorrectlyAnswered();
+				}
+				else
+				{
+					Debug.Log("no");
+					AllTogglesOff();
+				}
 			}
 		}
 	}
@@ -130,14 +133,6 @@ public class QuizController : MonoBehaviour {
 			nextPanelButton.SetActive(true);
 		}
 	}
-
-	void DrawLines()
-	{
-		//lineRend.SetPosition(0, iToggle.GetComponent<RectTransform>().anchoredPosition3D);
-		//lineRend.SetPosition(1, nToggle.GetComponent<RectTransform>().anchoredPosition3D);
-
-	}
-
 }
 
 [System.Serializable]
