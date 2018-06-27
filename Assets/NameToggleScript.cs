@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class ToggleScript : MonoBehaviour 
+public class NameToggleScript : MonoBehaviour 
 {
-	[HideInInspector]public Toggle[] toggles;
-	[HideInInspector]public Image[] bgImages;
+	[HideInInspector] public Toggle[] toggles;
+	[HideInInspector] public Image[] bgImages;
 	int testInt = 0;
 	[Tooltip("if the toggle has an image as a background instead of blank colour")]
 	public bool useTint;

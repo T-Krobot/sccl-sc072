@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class QuizController : MonoBehaviour {
 
@@ -14,8 +15,19 @@ public class QuizController : MonoBehaviour {
 	private List<Image> objDisplayP;
 	private List<Text> objNameP;
 
-	public ToggleGroup[] toggleGroups;
+	public ToggleScript toggleScript;
+	public NameToggleScript nameToggleScript;
 
+	public ToggleGroup imageToggleGroup;
+	public ToggleGroup nameToggleGroup;
+
+	public LineRenderer lineRend;
+
+	int answeredCorrectly = 0;
+
+	public GameObject nextPanelButton;
+
+	
 
 
 	void Start () 
@@ -26,33 +38,15 @@ public class QuizController : MonoBehaviour {
 		Debug.Log(objDisplayP.Count);
 		RandomiseEntries2();
 		Debug.Log(objDisplayP.Count);
+		lineRend.startWidth = 0.3f;
+		lineRend.endWidth = 0.3f;
+		lineRend.positionCount = 2;
 	}
 	
 	void Update () 
 	{
 		
 	}
-
-	void RandomiseEntries()
-	{
-
-		for(int i = 0; i < objDisplay.Count; i++)
-		{
-			int imgRandEntry = Random.Range(0, objDisplayP.Count);
-			int nameRandEntry = Random.Range(0, objNameP.Count);
-
-			Debug.Log("img rand entry: " + imgRandEntry + " name rand entry: " + nameRandEntry);
-
-			objDisplayP[imgRandEntry].sprite = quiz1[i].objImg;
-			objNameP[nameRandEntry].text = quiz1[i].objName;
-
-			objDisplayP.RemoveAt(imgRandEntry);
-			objNameP.RemoveAt(nameRandEntry);
-
-		}
-
-	}
-
 
 	void RandomiseEntries2()
 	{
@@ -80,6 +74,7 @@ public class QuizController : MonoBehaviour {
 		{
 			objDisplayP[i].sprite = quiz1[i].objImg;
 			objNameP[i].text = quiz1[i].objName;
+			objDisplayP[i].GetComponent<ValueHolder>().nameValue = quiz1[i].objName;
 		}
 	}
 
@@ -87,6 +82,62 @@ public class QuizController : MonoBehaviour {
 	{
 
 	}
+
+	public void CompareAnswers()
+	{
+		Toggle iToggle = null;
+		Toggle nToggle = null;
+		
+		if(nameToggleGroup.ActiveToggles().FirstOrDefault())
+		{
+			nToggle = nameToggleGroup.ActiveToggles().FirstOrDefault();
+		}
+		
+		if(imageToggleGroup.ActiveToggles().FirstOrDefault())
+		{
+			iToggle = imageToggleGroup.ActiveToggles().FirstOrDefault();
+		}
+
+		if(nToggle && iToggle)
+		{
+			if(nToggle.GetComponentInChildren<Text>().text == iToggle.GetComponent<ValueHolder>().nameValue)
+			{
+				Debug.Log("yes");
+				iToggle.interactable = false;
+				nToggle.interactable = false;
+				AllTogglesOff();
+				CorrectlyAnswered();
+			}
+			else
+			{
+				Debug.Log("no");
+				AllTogglesOff();
+			}
+		}
+	}
+
+	void AllTogglesOff()
+	{
+		nameToggleGroup.SetAllTogglesOff();
+		imageToggleGroup.SetAllTogglesOff();
+	}
+
+	void CorrectlyAnswered()
+	{
+		answeredCorrectly++;
+		if(answeredCorrectly == nameToggleScript.bgImages.Length)
+		{
+			nextPanelButton.SetActive(true);
+		}
+	}
+
+	void DrawLines()
+	{
+		//lineRend.SetPosition(0, iToggle.GetComponent<RectTransform>().anchoredPosition3D);
+		//lineRend.SetPosition(1, nToggle.GetComponent<RectTransform>().anchoredPosition3D);
+
+	}
+
 }
 
 [System.Serializable]
