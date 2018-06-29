@@ -67,3 +67,4 @@ MonoBehaviour:
       cool huh?
   - objectImage: {fileID: 21300000, guid: 858b9fe7f67ac40b582bf189b677d293, type: 3}
     objectDescription: this is a whiteboard, cool beans
+  gController: {fileID: 0}

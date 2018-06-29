@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene1.unity
     guid: abecb027edff342b78857216f71d372c
   - enabled: 1
-    path: Assets/Scenes/Quiz1.unity
-    guid: 36b8b790f1ae347458cdf24e9e56d339
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 080dd5331afa7496e8fa096e30156008
+  - enabled: 1
+    path: Assets/Scenes/GameScene3.unity
+    guid: 917f6b6afd80e49fe9a6f2109170480b
+  - enabled: 1
+    path: Assets/Scenes/GameScene2.unity
+    guid: 16c28f27e83894c0099c79f13ff71a48
   m_configObjects: {}

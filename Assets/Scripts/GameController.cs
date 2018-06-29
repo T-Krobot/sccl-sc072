@@ -7,12 +7,16 @@ public class GameController : MonoBehaviour
 {
 	public GameObject[] displayPanels;
 	private SceneLoader sceneLoader;
+	public bool resetPanelActiveOrder;
 
 	int currentPanel = 0;
 
 	void Start () 
 	{
-		
+		if(resetPanelActiveOrder)
+		{
+			ResetPanels();
+		}
 	}
 	
 	void Update () 
@@ -59,5 +63,14 @@ public class GameController : MonoBehaviour
 		{
 			Debug.LogWarning("out of index");
 		}
+	}
+
+	void ResetPanels()
+	{
+		for(int i = 0; i < displayPanels.Length; i++)
+		{
+			displayPanels[i].SetActive(false);
+		}
+		displayPanels[0].SetActive(true);
 	}
 }

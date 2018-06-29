@@ -7,7 +7,6 @@ using System.Linq;
 public class QuizController : MonoBehaviour {
 
 	public List<QuizObjects> quiz1 = new List<QuizObjects>();
-	private List<QuizObjects> quiz1Private = new List<QuizObjects>();
 
 	public List<Image> objDisplay;
 	public List<Text> objName;
@@ -21,6 +20,8 @@ public class QuizController : MonoBehaviour {
 	public ToggleGroup imageToggleGroup;
 	public ToggleGroup nameToggleGroup;
 
+	List<Color> randColors = new List<Color>(new Color[] {Color.red, Color.blue, Color.green, Color.cyan, Color.magenta, Color.yellow});
+
 
 	int answeredCorrectly = 0;
 
@@ -31,7 +32,6 @@ public class QuizController : MonoBehaviour {
 
 	void Start () 
 	{
-		//Debug.Log(objDisplayP.Count);
 		objNameP = objName;
 		objDisplayP = objDisplay;
 		Debug.Log(objDisplayP.Count);
@@ -107,6 +107,13 @@ public class QuizController : MonoBehaviour {
 					Debug.Log("yes");
 					iToggle.interactable = false;
 					nToggle.interactable = false;
+
+					int tempInt = Random.Range(0, randColors.Count);
+
+
+					iToggle.image.color = randColors[tempInt];
+					nToggle.image.color = randColors[tempInt];
+					randColors.RemoveAt(tempInt);
 					AllTogglesOff();
 					CorrectlyAnswered();
 				}
