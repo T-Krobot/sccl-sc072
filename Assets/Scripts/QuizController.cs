@@ -20,7 +20,7 @@ public class QuizController : MonoBehaviour {
 	public ToggleGroup imageToggleGroup;
 	public ToggleGroup nameToggleGroup;
 
-	List<Color> randColors = new List<Color>(new Color[] {Color.red, Color.blue, Color.green, Color.cyan, Color.magenta, Color.yellow});
+	List<Color> randColors = new List<Color>(new Color[] {Color.blue, Color.green, Color.cyan, Color.magenta, Color.yellow});
 
 
 	int answeredCorrectly = 0;
