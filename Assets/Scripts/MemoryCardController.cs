@@ -55,12 +55,6 @@ public class MemoryCardController : MonoBehaviour
 	
 	void Update()
 	{
-		/*if(flippedCards < 0)
-		{
-			DeactivateAllCards();
-			flippedCards = 0;
-		}
-		*/
 		flippedCards = FlippedCards();
 
 		Debug.Log(flippedCards);
@@ -89,7 +83,6 @@ public class MemoryCardController : MonoBehaviour
 			{
 				card1.correct = true;
 				card2.correct = true;
-				//flippedCards = 0;
 				card1.isActive = false;
 				card2.isActive = false;
 				correctlyGuessedCards++;

@@ -28,7 +28,6 @@ public class NextDescription : MonoBehaviour
 		}
 		else
 		{
-			//sceneLoader.LoadNextSceneInBuildIndex();
 			gController.GetNextPanel();
 		}
 		
@@ -44,8 +43,6 @@ public class NextDescription : MonoBehaviour
 		}
 		else
 		{
-			//sceneLoader.LoadPreviousSceneInBuildIndex();
-			//LoadPreviousSceneInBuildIndex();
 			gController.GetPreviousPanel();
 		}
 	}
