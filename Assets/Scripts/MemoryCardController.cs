@@ -33,14 +33,9 @@ public class MemoryCardController : MonoBehaviour
 		{
 			n--;
 			int k = Random.Range(0, n + 1);
-
 			var displayValue = cardObjects[k];
-
 			cardObjects[k] = cardObjects[n];
-
 			cardObjects[n] = displayValue;
-			
-
 		}
 		AssignCards();
 	}
