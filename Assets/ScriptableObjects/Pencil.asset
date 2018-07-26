@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cc34353cda94f67add2675b324e91b, type: 3}
   m_Name: Pencil
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 21300000, guid: cce61f444dc4e47c5b388e9af35e7ee9, type: 3}
+  cardImage: {fileID: 21300000, guid: 4ec751b0f583e4ab19b67c88eef53046, type: 3}

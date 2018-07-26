@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cc34353cda94f67add2675b324e91b, type: 3}
   m_Name: Paper
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 21300000, guid: 533643cbf83bb4f8b97a0ef8760117f1, type: 3}
+  cardImage: {fileID: 21300000, guid: c9897344742a247a59be8e5c9a580eb6, type: 3}

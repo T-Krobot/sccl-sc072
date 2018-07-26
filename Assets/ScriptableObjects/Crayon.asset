@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cc34353cda94f67add2675b324e91b, type: 3}
   m_Name: Crayon
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 21300000, guid: 7cf104f8c1416408d8ef0e05e39ebd12, type: 3}
+  cardImage: {fileID: 21300000, guid: 87551d115fb0e4133bc6094530e4b8df, type: 3}

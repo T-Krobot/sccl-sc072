@@ -32,22 +32,26 @@ public class CardObject : MonoBehaviour, IPointerDownHandler
 
 	public void OnPointerDown(PointerEventData pointerEventData)
 	{
-		if(MemoryCardController.flippedCards < 2 && !isActive)
+		if(!correct)
 		{
-			ActivateCard();
-		}
-		else if(MemoryCardController.flippedCards >= 2)
-		{
-			for(int i = 0; i < mController.cardObjects.Count; i++)
+			if(MemoryCardController.flippedCards < 2 && !isActive)
 			{
-				if(mController.cardObjects[i].GetComponent<CardObject>().isActive)
-				{
-					mController.cardObjects[i].GetComponent<CardObject>().DeactivateCard(false);
-				}
+				ActivateCard();
 			}
-			ActivateCard();
-			
+			else if(MemoryCardController.flippedCards >= 2)
+			{
+				for(int i = 0; i < mController.cardObjects.Count; i++)
+				{
+					if(mController.cardObjects[i].GetComponent<CardObject>().isActive)
+					{
+						mController.cardObjects[i].GetComponent<CardObject>().DeactivateCard(false);
+					}
+				}
+				ActivateCard();
+				
+			}
 		}
+		
 	}
 
 	public void ActivateCard()
@@ -55,6 +59,7 @@ public class CardObject : MonoBehaviour, IPointerDownHandler
 		isActive = true;
 		currentImage.sprite = card.cardImage;
 		mController.CompareCards();
+		//Debug.Log("Activate card: " + card.cardImage);
 	}
 
 	public void DeactivateCard(bool fromCoroutine)

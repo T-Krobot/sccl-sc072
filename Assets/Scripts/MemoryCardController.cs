@@ -15,6 +15,7 @@ public class MemoryCardController : MonoBehaviour
 	void Start()
 	{
 		RandomiseEntries();
+		correctlyGuessedCards = 0;
 	}
 
 	void AssignCards()
@@ -51,8 +52,7 @@ public class MemoryCardController : MonoBehaviour
 	void Update()
 	{
 		flippedCards = FlippedCards();
-
-		Debug.Log(flippedCards);
+		Debug.Log(correctlyGuessedCards);
 	}
 
 	public void CompareCards()

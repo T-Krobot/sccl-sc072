@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71cc34353cda94f67add2675b324e91b, type: 3}
   m_Name: Rubber
   m_EditorClassIdentifier: 
-  cardImage: {fileID: 21300000, guid: 8c2543bb0417e4b2ca689a46bbc028ce, type: 3}
+  cardImage: {fileID: 21300000, guid: 01fbf68f15a3a4136807c32bf37c95a4, type: 3}
