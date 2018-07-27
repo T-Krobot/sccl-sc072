@@ -14,11 +14,6 @@ public class QuizController2 : MonoBehaviour
 
 	public GameObject wrongAnswerPanel;
 
-	int roundNumber = 0;
-
-	// for debugging
-	int tempInt = 0;
-
 	void Start () 
 	{
 		ChooseRandomQuestion();

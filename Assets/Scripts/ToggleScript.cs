@@ -8,7 +8,6 @@ public class ToggleScript : MonoBehaviour
 {
 	[HideInInspector]public Toggle[] toggles;
 	[HideInInspector]public Image[] bgImages;
-	int testInt = 0;
 	[Tooltip("if the toggle has an image as a background instead of blank colour")]
 	public bool useTint;
 
