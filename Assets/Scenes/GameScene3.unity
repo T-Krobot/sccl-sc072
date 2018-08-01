@@ -3502,16 +3502,16 @@ MonoBehaviour:
   objDesc: {fileID: 300714783}
   objInfo:
   - objectImage: {fileID: 21300000, guid: 01fbf68f15a3a4136807c32bf37c95a4, type: 3}
-    objectDescription: Eraser
+    objectDescription: "\u6A61\u76AE\u64E6"
     objectAudio: {fileID: 8300000, guid: e486dd96018dc4240b1e19264a53f7f8, type: 3}
   - objectImage: {fileID: 21300000, guid: 87551d115fb0e4133bc6094530e4b8df, type: 3}
-    objectDescription: Crayons
+    objectDescription: "\u8721\u7B14"
     objectAudio: {fileID: 8300000, guid: 8e3cc1a1bf646fb43b2f980837bb1767, type: 3}
   - objectImage: {fileID: 21300000, guid: c9897344742a247a59be8e5c9a580eb6, type: 3}
-    objectDescription: Paper
+    objectDescription: "\u767D\u7EB8"
     objectAudio: {fileID: 8300000, guid: 1c3b5415f3095724db21255e4dfdb0f3, type: 3}
   - objectImage: {fileID: 21300000, guid: 4ec751b0f583e4ab19b67c88eef53046, type: 3}
-    objectDescription: Pencil
+    objectDescription: "\u7B14"
     objectAudio: {fileID: 8300000, guid: 17d7717256b674748a8e72e9a477a862, type: 3}
   gController: {fileID: 1672993620}
 --- !u!114 &1672993623

@@ -5694,16 +5694,16 @@ MonoBehaviour:
   objDesc: {fileID: 1312861419}
   objInfo:
   - objectImage: {fileID: 21300000, guid: 6de3c6061351d4e7593ecc953c5475b0, type: 3}
-    objectDescription: Pillow
+    objectDescription: "\u6795\u5934"
     objectAudio: {fileID: 8300000, guid: 93c2cb7e02f3a59499c1c1fe01850335, type: 3}
   - objectImage: {fileID: 21300000, guid: 1ee4b0ad8753747dbaad7ef2d5466c1e, type: 3}
-    objectDescription: Bolster
+    objectDescription: "\u62B1\u6795"
     objectAudio: {fileID: 8300000, guid: 28a4bd1a24302b2469416ba107cddb86, type: 3}
   - objectImage: {fileID: 21300000, guid: 46b097d315aca40dc8b2465c71bbd2dd, type: 3}
-    objectDescription: Blanket
+    objectDescription: "\u88AB\u5B50"
     objectAudio: {fileID: 8300000, guid: a90dd4600014a25439526ef828bfea14, type: 3}
   - objectImage: {fileID: 21300000, guid: b48156e6ebac54562943edd5bb3b8f69, type: 3}
-    objectDescription: mattress
+    objectDescription: "\u5E8A\u8925"
     objectAudio: {fileID: 8300000, guid: b0c6bf8cdcbda5042a24e13f0782f9ab, type: 3}
   - objectImage: {fileID: 21300000, guid: 8cc23303233f64641ab960660a9f23b5, type: 3}
     objectDescription: bed cover
