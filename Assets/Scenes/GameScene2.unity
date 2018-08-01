@@ -546,7 +546,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u5E8A\u8925"
 --- !u!222 &339394126
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u6795\u5934"
 --- !u!222 &394448684
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1888,7 +1888,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Congratulations
+  m_Text: " \u5C0F\u670B\u53CB,\u4F60\u771F\u68D2!"
 --- !u!222 &966455719
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2346,7 +2346,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u5E8A\u5355"
 --- !u!222 &1108338067
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3478,6 +3478,11 @@ Prefab:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114386638442987326, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 33875b0e7434f224687b430f1c3e502d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0
@@ -3761,7 +3766,7 @@ Prefab:
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.000016212
+      value: -0.000015258789
       objectReference: {fileID: 0}
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
@@ -3808,6 +3813,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4bab3886f68ba2c4ead38a32802f3715, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0
@@ -4454,7 +4464,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u62B1\u6795"
 --- !u!222 &1704295079
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4544,7 +4554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: agdyafyaiudafbihdausfdknajfuds
+  m_Text: "\u7761\u89C9\u65F6\u95F4\u5230\u4E86!\u60F3\u4E0D\u60F3\u77E5\u9053\u6BCF\u4E00\u6B21\u7761\u89C9\u65F6\u90FD\u6709\r\n\u4EC0\u4E48\u7269\u54C1\u966A\u4F60\u7761\u5462?\u8BA9\u6211\u4EEC\u6765\u544A\u8BC9\u4F60\u5427!\r"
 --- !u!222 &1715287552
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4851,7 +4861,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u88AB\u5B50"
 --- !u!222 &1835905364
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5515,7 +5525,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Wrong
+  m_Text: "\u7B54\u9519\u4E86,\u8BF7\u70B9\u51FB\u56DE\u5230\u9898\u76EE\u518D\u8BD5\u4E00\u6B21!"
 --- !u!222 &1926352515
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5685,19 +5695,19 @@ MonoBehaviour:
   objInfo:
   - objectImage: {fileID: 21300000, guid: 6de3c6061351d4e7593ecc953c5475b0, type: 3}
     objectDescription: Pillow
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: 93c2cb7e02f3a59499c1c1fe01850335, type: 3}
   - objectImage: {fileID: 21300000, guid: 1ee4b0ad8753747dbaad7ef2d5466c1e, type: 3}
     objectDescription: Bolster
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: 28a4bd1a24302b2469416ba107cddb86, type: 3}
   - objectImage: {fileID: 21300000, guid: 46b097d315aca40dc8b2465c71bbd2dd, type: 3}
     objectDescription: Blanket
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: a90dd4600014a25439526ef828bfea14, type: 3}
   - objectImage: {fileID: 21300000, guid: b48156e6ebac54562943edd5bb3b8f69, type: 3}
     objectDescription: mattress
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: b0c6bf8cdcbda5042a24e13f0782f9ab, type: 3}
   - objectImage: {fileID: 21300000, guid: 8cc23303233f64641ab960660a9f23b5, type: 3}
     objectDescription: bed cover
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: 85f2466e9dbb4df4d8711f1e5a5a5910, type: 3}
   gController: {fileID: 1933990124}
 --- !u!114 &1933990128
 MonoBehaviour:
@@ -5712,12 +5722,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   qData:
   - answers:
-    - answerText: Bed cover
+    - answerText: "\u62B1\u6795 "
+      isCorrect: 0
+    - answerText: "\u6795\u5934 "
+      isCorrect: 0
+    - answerText: "\u88AB\u5B50"
       isCorrect: 1
-    - answerText: cover bed
-      isCorrect: 0
-    - answerText: ced bover
-      isCorrect: 0
     questionImage: {fileID: 21300000, guid: 8cc23303233f64641ab960660a9f23b5, type: 3}
   - answers:
     - answerText: blanker

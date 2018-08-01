@@ -1249,7 +1249,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u684C\u5B50"
 --- !u!222 &269102124
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2203,7 +2203,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ajbsdfyakdhuahsudhauhawidhidas
+  m_Text: "\u8BF7\u4F60\u4EEC\u628A\u6211\u4EEC\u7684\u540D\u5B57\u8FDE\u5728\u4E00\u8D77!"
 --- !u!222 &453745603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2605,6 +2605,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 071db986b453b264e9fd9568adbf5079, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0
@@ -3415,7 +3420,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u7B14"
 --- !u!222 &894195760
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3754,6 +3759,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a379c3f5d1913e641b571f1f93e6d22a, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0
@@ -4205,7 +4215,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u767D\u677F\u64E6"
 --- !u!222 &1234925814
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5051,27 +5061,27 @@ Prefab:
     - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
         type: 2}
       propertyPath: objInfo.Array.data[0].objectDescription
-      value: This is a chair
+      value: "\u6905\u5B50"
       objectReference: {fileID: 0}
     - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
         type: 2}
       propertyPath: objInfo.Array.data[1].objectDescription
-      value: This is a duster
+      value: "\u767D\u677F\u64E6"
       objectReference: {fileID: 0}
     - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
         type: 2}
       propertyPath: objInfo.Array.data[2].objectDescription
-      value: This is a pencil
+      value: "\u7B14"
       objectReference: {fileID: 0}
     - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
         type: 2}
       propertyPath: objInfo.Array.data[3].objectDescription
-      value: This is a table
+      value: "\u684C\u5B50 "
       objectReference: {fileID: 0}
     - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
         type: 2}
       propertyPath: objInfo.Array.data[4].objectDescription
-      value: This is a whiteboard
+      value: "\u767D\u677F"
       objectReference: {fileID: 0}
     - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
         type: 2}
@@ -5102,6 +5112,31 @@ Prefab:
       propertyPath: aSource
       value: 
       objectReference: {fileID: 1583475002}
+    - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
+        type: 2}
+      propertyPath: objInfo.Array.data[0].objectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 09987f918617ff340af30a919892025b, type: 3}
+    - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
+        type: 2}
+      propertyPath: objInfo.Array.data[1].objectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 985de0e44a330ff449b856954fd53503, type: 3}
+    - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
+        type: 2}
+      propertyPath: objInfo.Array.data[2].objectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: a3bc8d2ad8bf54b4ab2926ea57bb64e1, type: 3}
+    - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
+        type: 2}
+      propertyPath: objInfo.Array.data[3].objectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: de528d77a6d1c2d45b8f0222bbd6a6dd, type: 3}
+    - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
+        type: 2}
+      propertyPath: objInfo.Array.data[4].objectAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: b94bc54eff5546e4faf182188c0173c0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9894526a7d2b647d18c356e77dcd8ba0, type: 2}
   m_IsPrefabParent: 0
@@ -5148,15 +5183,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quiz1:
   - objImg: {fileID: 21300000, guid: 80043a865ddbf41a3b6da1fb2441fda8, type: 3}
-    objName: Duster
+    objName: "\u767D\u677F\u64E6"
   - objImg: {fileID: 21300000, guid: b665e3624c0db4cb08037fe911dd53e6, type: 3}
-    objName: Chair
+    objName: "\u6905\u5B50"
   - objImg: {fileID: 21300000, guid: 4ec751b0f583e4ab19b67c88eef53046, type: 3}
-    objName: Pencil
+    objName: "\u7B14"
   - objImg: {fileID: 21300000, guid: 51651bddc08f3445ca93e26c24cacd0a, type: 3}
-    objName: Table
+    objName: "\u684C\u5B50 "
   - objImg: {fileID: 21300000, guid: fb90d230c2dc74559a66100c423c6053, type: 3}
-    objName: Whiteboard
+    objName: "\u767D\u677F"
   objDisplay:
   - {fileID: 302446791}
   - {fileID: 1960701277}
@@ -5423,7 +5458,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: " \u6905\u5B50"
 --- !u!222 &1624673084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5575,7 +5610,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u767D\u677F"
 --- !u!222 &1643754603
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5682,8 +5717,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1702404558533650, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c18ad32bd3aec1a4e982382ab7fefe2d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0
@@ -5789,6 +5829,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c2e1a537bbb7374187c15cdb7004ad2, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0
@@ -6972,6 +7017,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4484efc852842e64799bc78e7f1bf33b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0

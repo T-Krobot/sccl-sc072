@@ -797,7 +797,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u767D\u7EB8"
 --- !u!222 &204201842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2011,6 +2011,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 618808b49b4a25a4b9e4870abd333be0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0
@@ -2216,7 +2221,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u7B14"
 --- !u!222 &946498741
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3084,7 +3089,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u8721\u7B14"
 --- !u!222 &1422749624
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3498,16 +3503,16 @@ MonoBehaviour:
   objInfo:
   - objectImage: {fileID: 21300000, guid: 01fbf68f15a3a4136807c32bf37c95a4, type: 3}
     objectDescription: Eraser
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: e486dd96018dc4240b1e19264a53f7f8, type: 3}
   - objectImage: {fileID: 21300000, guid: 87551d115fb0e4133bc6094530e4b8df, type: 3}
     objectDescription: Crayons
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: 8e3cc1a1bf646fb43b2f980837bb1767, type: 3}
   - objectImage: {fileID: 21300000, guid: c9897344742a247a59be8e5c9a580eb6, type: 3}
     objectDescription: Paper
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: 1c3b5415f3095724db21255e4dfdb0f3, type: 3}
   - objectImage: {fileID: 21300000, guid: 4ec751b0f583e4ab19b67c88eef53046, type: 3}
     objectDescription: Pencil
-    objectAudio: {fileID: 0}
+    objectAudio: {fileID: 8300000, guid: 17d7717256b674748a8e72e9a477a862, type: 3}
   gController: {fileID: 1672993620}
 --- !u!114 &1672993623
 MonoBehaviour:
@@ -3993,7 +3998,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: asdbfayd
+  m_Text: "\u6A61\u76AE\u6AAB"
 --- !u!222 &1889492075
 CanvasRenderer:
   m_ObjectHideFlags: 0
