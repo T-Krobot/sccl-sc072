@@ -21,14 +21,12 @@ public class QuizController : MonoBehaviour {
 	public ToggleGroup nameToggleGroup;
 
 	List<Color> randColors = new List<Color>(new Color[] {Color.blue, Color.green, Color.cyan, Color.magenta, Color.yellow});
-
+	private AudioSource aSource;
+	public AudioClip correct, wrong;
 
 	int answeredCorrectly = 0;
 
 	public GameObject nextPanelButton;
-
-	
-
 
 	void Start () 
 	{
@@ -37,12 +35,9 @@ public class QuizController : MonoBehaviour {
 		Debug.Log(objDisplayP.Count);
 		RandomiseEntries();
 		Debug.Log(objDisplayP.Count);
+		aSource = GetComponent<AudioSource>();
 	}
 	
-	void Update () 
-	{
-		
-	}
 
 	void RandomiseEntries()
 	{
@@ -77,11 +72,6 @@ public class QuizController : MonoBehaviour {
 		}
 	}
 
-	public void ReceiveAnswer(int answerID)
-	{
-
-	}
-
 	public void CompareAnswers(int toggleID)
 	{
 		if(toggleScript.toggles[toggleID].isOn || nameToggleScript.toggles[toggleID].isOn)
@@ -104,6 +94,8 @@ public class QuizController : MonoBehaviour {
 			{
 				if(nToggle.GetComponentInChildren<Text>().text == iToggle.GetComponent<ValueHolder>().nameValue)
 				{
+					aSource.clip = correct;
+					aSource.Play();
 					Debug.Log("yes");
 					iToggle.interactable = false;
 					nToggle.interactable = false;
@@ -119,6 +111,8 @@ public class QuizController : MonoBehaviour {
 				}
 				else
 				{
+					aSource.clip = wrong;
+					aSource.Play();
 					Debug.Log("no");
 					AllTogglesOff();
 				}

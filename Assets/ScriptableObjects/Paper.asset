@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Name: Paper
   m_EditorClassIdentifier: 
   cardImage: {fileID: 21300000, guid: c9897344742a247a59be8e5c9a580eb6, type: 3}
+  character: T
+  ID: 2

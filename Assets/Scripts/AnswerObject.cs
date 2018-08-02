@@ -13,6 +13,7 @@ public class AnswerObject : MonoBehaviour
 	public bool isCorrect;
 	[HideInInspector]
 	public string answerText;
+	public AudioClip answerAudio;
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{

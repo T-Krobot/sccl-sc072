@@ -16,7 +16,7 @@ public class QuizController2 : MonoBehaviour
 
 	void Start () 
 	{
-		ChooseRandomQuestion();
+		UpdateQuestions(0);
 	}
 
 	void ChooseRandomQuestion()
@@ -37,8 +37,8 @@ public class QuizController2 : MonoBehaviour
 		{
 			var aObject = answerObjects[i].GetComponent<AnswerObject>();
 			aObject.isCorrect = qData[qToChoose].answers[i].isCorrect;
+			aObject.answerAudio = qData[qToChoose].answers[i].answerAudio;
 			aObject.UpdateAnswerText(qData[qToChoose].answers[i].answerText);
-
 		}
 	}
 
@@ -63,6 +63,7 @@ public class QuizController2 : MonoBehaviour
 public class Quiz2AnswerData
 {
 	public string answerText;
+	public AudioClip answerAudio;
 	public bool isCorrect;
 }
 

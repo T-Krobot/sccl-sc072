@@ -10,12 +10,14 @@ public class MemoryCardController : MonoBehaviour
 	public static int flippedCards = 0;
 	public GameObject restartButton;
 	public static int correctlyGuessedCards = 0;
-
+	private AudioSource aSource;
+	public AudioClip correct, wrong;
 	
 	void Start()
 	{
 		RandomiseEntries();
 		correctlyGuessedCards = 0;
+		aSource = GetComponent<AudioSource>();
 	}
 
 	void AssignCards()
@@ -23,7 +25,17 @@ public class MemoryCardController : MonoBehaviour
 		for(int i = 0; i < cardObjects.Count; i++)
 		{
 			CardObject asdf = cardObjects[i].GetComponent<CardObject>();
-			asdf.SetImage(cards[i]);
+			asdf.character = "";
+			asdf.ID = cards[i].ID;
+			if(i % 2 != 0)
+			{
+				asdf.character = cards[i].character;
+				Debug.Log(i);
+			}
+			else
+			{
+				asdf.SetImage(cards[i]);
+			}
 		}
 	}
 	
@@ -52,7 +64,6 @@ public class MemoryCardController : MonoBehaviour
 	void Update()
 	{
 		flippedCards = FlippedCards();
-		Debug.Log(correctlyGuessedCards);
 	}
 
 	public void CompareCards()
@@ -74,8 +85,10 @@ public class MemoryCardController : MonoBehaviour
 
 		if(card1 && card2)
 		{
-			if(card1.card == card2.card)
+			if(card1.ID == card2.ID)
 			{
+				aSource.clip = correct;
+				aSource.Play();
 				card1.correct = true;
 				card2.correct = true;
 				card1.isActive = false;
@@ -88,7 +101,9 @@ public class MemoryCardController : MonoBehaviour
 			}
 			else
 			{
-			StartCoroutine(FlipCardBack(card1, card2));
+				aSource.clip = wrong;
+				aSource.Play();
+				StartCoroutine(FlipCardBack(card1, card2));
 			}
 		}
 	}

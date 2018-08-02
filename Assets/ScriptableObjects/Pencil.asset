@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Name: Pencil
   m_EditorClassIdentifier: 
   cardImage: {fileID: 21300000, guid: 4ec751b0f583e4ab19b67c88eef53046, type: 3}
+  character: P
+  ID: 3

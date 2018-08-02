@@ -294,6 +294,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &559916374 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 2074762376}
 --- !u!1 &1220811367
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,12 +867,17 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1420080998}
+      objectReference: {fileID: 559916374}
     - target: {fileID: 82463898090426540, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 369cc117df998624dac90b38efb5e2e7, type: 3}
+    - target: {fileID: 114386638442987326, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7, type: 2}
   m_IsPrefabParent: 0

@@ -17,17 +17,31 @@ public class CardObject : MonoBehaviour, IPointerDownHandler
 
 	[HideInInspector]
 	public bool correct;
-
+	public int ID;
+	public string character = null;
+	
 	public MemoryCardController mController;
 
-	void Start()
+	private Text characterText;
+
+	void Awake()
 	{
 		currentImage = GetComponent<Image>();
+		characterText = GetComponentInChildren<Text>();
+	}
+	void Start()
+	{
+		
 	}
 	
 	public void SetImage(Card newCard)
 	{
 		card = newCard;
+	}
+
+	public void SetCharacter()
+	{
+		characterText.text = character;
 	}
 
 	public void OnPointerDown(PointerEventData pointerEventData)
@@ -48,7 +62,6 @@ public class CardObject : MonoBehaviour, IPointerDownHandler
 					}
 				}
 				ActivateCard();
-				
 			}
 		}
 		
@@ -57,9 +70,19 @@ public class CardObject : MonoBehaviour, IPointerDownHandler
 	public void ActivateCard()
 	{
 		isActive = true;
-		currentImage.sprite = card.cardImage;
+		if(character == "")
+		{
+			currentImage.sprite = card.cardImage;
+			Debug.Log("image card");
+		}
+		else
+		{
+			characterText.text = character;
+			Debug.Log("character card");
+			Debug.Log(character);
+		}
+		
 		mController.CompareCards();
-		//Debug.Log("Activate card: " + card.cardImage);
 	}
 
 	public void DeactivateCard(bool fromCoroutine)
@@ -67,19 +90,18 @@ public class CardObject : MonoBehaviour, IPointerDownHandler
 		if(!correct)
 		{
 			isActive = false;
-			currentImage.sprite = inactiveSprite;
+			if(character == "")
+			{
+				currentImage.sprite = inactiveSprite;
+			}
+			else
+			{
+				characterText.text = "";
+			}
 			if(!fromCoroutine)
 			{
 				mController.StopAllCoroutines();
 			}
 		}
-	}
-
-	void TempDebug()
-	{
-		currentImage.sprite = card.cardImage;
-		var temp = currentImage.color;
-		temp.a = 200f;
-		currentImage.color = temp;
 	}
 }

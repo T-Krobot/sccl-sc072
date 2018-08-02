@@ -9,6 +9,6 @@ public class AnswerID : MonoBehaviour
 
 	public void SendAnswer()
 	{
-		qc.ReceiveAnswer(answerID);
+		
 	}
 }

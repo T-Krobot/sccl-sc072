@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Name: Rubber
   m_EditorClassIdentifier: 
   cardImage: {fileID: 21300000, guid: 01fbf68f15a3a4136807c32bf37c95a4, type: 3}
+  character: R
+  ID: 4
