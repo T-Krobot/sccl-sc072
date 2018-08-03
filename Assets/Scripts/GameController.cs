@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour 
 {
@@ -47,6 +48,7 @@ public class GameController : MonoBehaviour
 		}
 		else
 		{
+
 			Debug.LogWarning("out of index");
 		}
 	}
@@ -61,6 +63,7 @@ public class GameController : MonoBehaviour
 		}
 		else
 		{
+			SceneManager.LoadScene("LevelSelect");
 			Debug.LogWarning("out of index");
 		}
 	}
