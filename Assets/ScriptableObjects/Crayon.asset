@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Crayon
   m_EditorClassIdentifier: 
   cardImage: {fileID: 21300000, guid: 87551d115fb0e4133bc6094530e4b8df, type: 3}
-  character: C
+  character: "\u8721\u7B14"
   ID: 1
