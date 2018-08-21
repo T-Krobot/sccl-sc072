@@ -69,6 +69,7 @@ public class QuizController : MonoBehaviour {
 			objDisplayP[i].sprite = quiz1[i].objImg;
 			objNameP[i].text = quiz1[i].objName;
 			objDisplayP[i].GetComponent<ValueHolder>().nameValue = quiz1[i].objName;
+      objDisplayP[i].preserveAspect = true;
 		}
 	}
 
