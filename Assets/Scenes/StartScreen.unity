@@ -697,7 +697,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: "\u5F00\u59CB"
 --- !u!222 &1847623414
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -872,7 +872,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 369cc117df998624dac90b38efb5e2e7, type: 3}
+      objectReference: {fileID: 8300000, guid: 99a5619acbf809d47bbcd7c4016e0282, type: 3}
     - target: {fileID: 114386638442987326, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

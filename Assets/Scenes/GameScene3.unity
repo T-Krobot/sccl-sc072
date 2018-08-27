@@ -2375,7 +2375,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u7B14"
+  m_Text: "\u94C5\u7B14"
 --- !u!222 &946498741
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3932,8 +3932,8 @@ MonoBehaviour:
   - {fileID: 654651246}
   - {fileID: 2012056752}
   restartButton: {fileID: 842084534}
-  correct: {fileID: 8300000, guid: cc25d49ea5fbebc4b8fe02e303ff81d5, type: 3}
-  wrong: {fileID: 8300000, guid: 19c2e73c7a45af24fa8d0a1b51a66f99, type: 3}
+  correct: {fileID: 8300000, guid: b2ad163d525cddf4e9baa5df55f9f248, type: 3}
+  wrong: {fileID: 8300000, guid: 01787dd70dfd4674bbc47d543364c5b5, type: 3}
 --- !u!114 &1672993624
 MonoBehaviour:
   m_ObjectHideFlags: 0

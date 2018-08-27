@@ -28,6 +28,7 @@ public class NextDescription : MonoBehaviour
 		}
 		else // if not then call to gamecontroller to show next panel
 		{
+            aSource.Stop();
 			gController.GetNextPanel();
 		}
 		

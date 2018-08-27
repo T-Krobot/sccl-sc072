@@ -5589,7 +5589,7 @@ MonoBehaviour:
   imageToggleGroup: {fileID: 1575113992}
   nameToggleGroup: {fileID: 25715321}
   correct: {fileID: 8300000, guid: cc25d49ea5fbebc4b8fe02e303ff81d5, type: 3}
-  wrong: {fileID: 8300000, guid: 19c2e73c7a45af24fa8d0a1b51a66f99, type: 3}
+  wrong: {fileID: 8300000, guid: 01787dd70dfd4674bbc47d543364c5b5, type: 3}
   nextPanelButton: {fileID: 1063019496}
 --- !u!82 &1583475002
 AudioSource:
