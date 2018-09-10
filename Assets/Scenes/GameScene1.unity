@@ -904,7 +904,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &179547057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3541,10 +3541,10 @@ RectTransform:
   m_Father: {fileID: 1073962044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.85217, y: -28.486956}
-  m_SizeDelta: {x: 213.70435, y: 48.97391}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &882852125
 CanvasRenderer:
@@ -4159,7 +4159,7 @@ RectTransform:
   m_AnchorMin: {x: 0.34631252, y: 0}
   m_AnchorMax: {x: 0.6253438, y: 0}
   m_AnchoredPosition: {x: 18.42, y: 347}
-  m_SizeDelta: {x: -123.45569, y: 56.97391}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073962045
 MonoBehaviour:
@@ -5497,7 +5497,7 @@ Prefab:
         type: 2}
       propertyPath: objInfo.Array.data[0].objectAudio
       value: 
-      objectReference: {fileID: 8300000, guid: 09987f918617ff340af30a919892025b, type: 3}
+      objectReference: {fileID: 8300000, guid: 9114793549be042a7ada716c91362727, type: 3}
     - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
         type: 2}
       propertyPath: objInfo.Array.data[1].objectAudio
@@ -5512,7 +5512,7 @@ Prefab:
         type: 2}
       propertyPath: objInfo.Array.data[3].objectAudio
       value: 
-      objectReference: {fileID: 8300000, guid: de528d77a6d1c2d45b8f0222bbd6a6dd, type: 3}
+      objectReference: {fileID: 8300000, guid: 5af2615b1378047b0ae53ad5b018e20e, type: 3}
     - target: {fileID: 114500652134204806, guid: 9894526a7d2b647d18c356e77dcd8ba0,
         type: 2}
       propertyPath: objInfo.Array.data[4].objectAudio

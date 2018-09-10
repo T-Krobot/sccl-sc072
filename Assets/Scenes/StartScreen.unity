@@ -1018,37 +1018,37 @@ Prefab:
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.5
+      value: -294.5
       objectReference: {fileID: 0}
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: -727.47
+      value: 552.53
       objectReference: {fileID: 0}
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: -0.30000305
+      value: 97.7
       objectReference: {fileID: 0}
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.642
-      objectReference: {fileID: 0}
-    - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
-        type: 2}
-      propertyPath: m_AnchorMax.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
+        type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.744
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224604864053602234, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
@@ -1069,7 +1069,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 99a5619acbf809d47bbcd7c4016e0282, type: 3}
+      objectReference: {fileID: 8300000, guid: 6715440925cbb4e7ab416f12d753a50f, type: 3}
     - target: {fileID: 114386638442987326, guid: 948c2ed39d9aa4a5ea1bbff48dce6bc7,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
