@@ -19,17 +19,6 @@ public class NameToggleScript : MonoBehaviour
 		bgImages = gameObject.GetComponentsInChildren<Image>();
 		Debug.Log(bgImages.Length);
 	}
-	
-	void Update () 
-	{
-		
-	}
-	
-
-	void ToggleImage()
-	{
-		
-	}
 
 	public void ToggleToggles()
 	{

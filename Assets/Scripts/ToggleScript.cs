@@ -4,13 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+// toggle script used in GameScene1
 public class ToggleScript : MonoBehaviour 
 {
-	[HideInInspector]public Toggle[] toggles;
+	[HideInInspector]public Toggle[] toggles;	// array of toggles
 	[HideInInspector]public Image[] bgImages;
-	[Tooltip("if the toggle has an image as a background instead of blank colour")]
-	public bool useTint;
-
 
 
 	void Start () 
@@ -19,35 +17,16 @@ public class ToggleScript : MonoBehaviour
 		bgImages = gameObject.GetComponentsInChildren<Image>();
 		Debug.Log(bgImages.Length);
 	}
-	
-	void Update () 
-	{
-		
-	}
-	
-
-	void ToggleImage()
-	{
-		
-	}
 
 	public void ToggleToggles()
 	{
 		for(int i = 0; i < bgImages.Length; i++)
 		{
-			if(toggles[i].isOn && !useTint && toggles[i].interactable)
-			{
-				bgImages[i].color =  Color.green;
-			}
-			else if (!toggles[i].isOn && !useTint && toggles[i].interactable)
-			{
-				bgImages[i].color = Color.black;
-			}
-			else if (toggles[i].isOn && useTint && toggles[i].interactable)
+			if (toggles[i].isOn && toggles[i].interactable)
 			{
 				bgImages[i].color = Color.green;
 			}
-			else if (!toggles[i].isOn && useTint && toggles[i].interactable)
+			else if (!toggles[i].isOn && toggles[i].interactable)
 			{
 				bgImages[i].color = Color.white;
 			}

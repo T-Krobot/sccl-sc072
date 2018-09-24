@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// This script is used for showing the descriptions of each object in the quiz sections.
 public class NextDescription : MonoBehaviour
 {
 	public AudioSource aSource;																// audio source reference
@@ -11,7 +12,7 @@ public class NextDescription : MonoBehaviour
 	public Text objDesc;																	// UI text where object name will be displayed
 	public List<ObjectInformation> objInfo = new List<ObjectInformation>();					// list of object info class
 	private int arrayEntry = 0;																// used for accessing audio, image and name of specific object
-	public GameController gController;														// reference to game controller
+	public PanelController panelController;														// reference to panel controller
 
 	void Start()
 	{
@@ -26,10 +27,10 @@ public class NextDescription : MonoBehaviour
 			aSource.clip = objInfo[arrayEntry].objectAudio;
 			arrayEntry++;
 		}
-		else // if not then call to gamecontroller to show next panel
+		else // if not then call to panel controller to show next panel
 		{
             aSource.Stop();
-			gController.GetNextPanel();
+			panelController.GetNextPanel();
 		}
 		
 	}
@@ -45,12 +46,8 @@ public class NextDescription : MonoBehaviour
 		}
 		else
 		{
-			gController.GetPreviousPanel();
+			panelController.GetPreviousPanel();
 		}
-	}
-	public void LoadPreviousSceneInBuildIndex() // this is no longer used i think
-	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 	}
 }
 

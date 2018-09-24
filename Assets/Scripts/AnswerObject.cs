@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+// this is used in GameScene2 for the answer object
 public class AnswerObject : MonoBehaviour 
 {
-	// this can be attached to an object like a button or whatever else you are using.
-	public QuizController2 qController;
+	public QuizController2 qController;	// reference to quiz controller
 	public Text textDisplay;
 
 	[HideInInspector]
@@ -15,12 +16,6 @@ public class AnswerObject : MonoBehaviour
 	public string answerText;
 	public AudioClip answerAudio;
 	
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		// if there are other colliders that might intersect then check other's tag and tag the bullet or w/e
-		SubmitAnswer();
-	}
-
 	public void SubmitAnswer()
 	{
 		qController.ReceiveAnswer(isCorrect);

@@ -1637,7 +1637,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 735.3035, y: -457.6776}
+  m_AnchoredPosition: {x: 735.218, y: -457.74445}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &654651248
@@ -1686,10 +1686,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactiveSprite: {fileID: 21300000, guid: c93177c17ed1b461693834f3b71ad052, type: 3}
-  sObject: {fileID: 0}
   isActive: 0
   card: {fileID: 0}
-  correct: 0
+  alreadyActive: 0
   ID: 0
   character: 
   mController: {fileID: 1672993623}
@@ -1956,7 +1955,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 485.30353, y: -207.67761}
+  m_AnchoredPosition: {x: 485.21802, y: -207.74445}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &816078733
@@ -2005,10 +2004,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactiveSprite: {fileID: 21300000, guid: c93177c17ed1b461693834f3b71ad052, type: 3}
-  sObject: {fileID: 0}
   isActive: 0
   card: {fileID: 0}
-  correct: 0
+  alreadyActive: 0
   ID: 0
   character: 
   mController: {fileID: 1672993623}
@@ -2659,7 +2657,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 735.3035, y: -207.67761}
+  m_AnchoredPosition: {x: 735.218, y: -207.74445}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118763174
@@ -2708,10 +2706,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactiveSprite: {fileID: 21300000, guid: c93177c17ed1b461693834f3b71ad052, type: 3}
-  sObject: {fileID: 0}
   isActive: 0
   card: {fileID: 0}
-  correct: 0
+  alreadyActive: 0
   ID: 0
   character: 
   mController: {fileID: 1672993623}
@@ -3073,7 +3070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 985.3035, y: -207.67761}
+  m_AnchoredPosition: {x: 985.218, y: -207.74445}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289670672
@@ -3122,10 +3119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactiveSprite: {fileID: 21300000, guid: c93177c17ed1b461693834f3b71ad052, type: 3}
-  sObject: {fileID: 0}
   isActive: 0
   card: {fileID: 0}
-  correct: 0
+  alreadyActive: 0
   ID: 0
   character: 
   mController: {fileID: 1672993623}
@@ -3305,7 +3301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1326689870
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3549,7 +3545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 235.30353, y: -457.6776}
+  m_AnchoredPosition: {x: 235.21802, y: -457.74445}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1464688221
@@ -3598,10 +3594,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactiveSprite: {fileID: 21300000, guid: c93177c17ed1b461693834f3b71ad052, type: 3}
-  sObject: {fileID: 0}
   isActive: 0
   card: {fileID: 0}
-  correct: 0
+  alreadyActive: 0
   ID: 0
   character: 
   mController: {fileID: 1672993623}
@@ -3808,7 +3803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 485.30353, y: -457.6776}
+  m_AnchoredPosition: {x: 485.21802, y: -457.74445}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1602600879
@@ -3857,10 +3852,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactiveSprite: {fileID: 21300000, guid: c93177c17ed1b461693834f3b71ad052, type: 3}
-  sObject: {fileID: 0}
   isActive: 0
   card: {fileID: 0}
-  correct: 0
+  alreadyActive: 0
   ID: 0
   character: 
   mController: {fileID: 1672993623}
@@ -3940,7 +3934,7 @@ MonoBehaviour:
   - objectImage: {fileID: 21300000, guid: 4ec751b0f583e4ab19b67c88eef53046, type: 3}
     objectDescription: "\u7B14"
     objectAudio: {fileID: 8300000, guid: 17d7717256b674748a8e72e9a477a862, type: 3}
-  gController: {fileID: 1672993620}
+  panelController: {fileID: 1672993620}
 --- !u!114 &1672993623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4337,10 +4331,10 @@ RectTransform:
   m_Father: {fileID: 1326689870}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.46112505, y: 0}
-  m_AnchorMax: {x: 0.6178751, y: 0}
-  m_AnchoredPosition: {x: -0.5, y: 126}
-  m_SizeDelta: {x: -0.19999695, y: 101.399994}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -205, y: 126}
+  m_SizeDelta: {x: 183.79999, y: 101.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1888135588
 MonoBehaviour:
@@ -4547,7 +4541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 235.30353, y: -207.67761}
+  m_AnchoredPosition: {x: 235.21802, y: -207.74445}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1969500491
@@ -4596,10 +4590,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactiveSprite: {fileID: 21300000, guid: c93177c17ed1b461693834f3b71ad052, type: 3}
-  sObject: {fileID: 0}
   isActive: 0
   card: {fileID: 0}
-  correct: 0
+  alreadyActive: 0
   ID: 0
   character: 
   mController: {fileID: 1672993623}
@@ -4712,7 +4705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 985.3035, y: -457.6776}
+  m_AnchoredPosition: {x: 985.218, y: -457.74445}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2012056754
@@ -4761,10 +4754,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inactiveSprite: {fileID: 21300000, guid: c93177c17ed1b461693834f3b71ad052, type: 3}
-  sObject: {fileID: 0}
   isActive: 0
   card: {fileID: 0}
-  correct: 0
+  alreadyActive: 0
   ID: 0
   character: 
   mController: {fileID: 1672993623}
@@ -4785,7 +4777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2026403892
 RectTransform:
   m_ObjectHideFlags: 0

@@ -4,43 +4,40 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
+
+// Quiz controller for the quiz in GameScene1
 public class QuizController : MonoBehaviour {
 
-	public List<QuizObjects> quiz1 = new List<QuizObjects>();
+	public List<QuizObjects> quiz1 = new List<QuizObjects>();		// list of classes containing the quiz information
 
-	public List<Image> objDisplay;
-	public List<Text> objName;
+	public List<Image> objDisplay;									// Original list of UI Images for displaying the picture of the object
+	public List<Text> objName;										// Original list of UI Text for displaying the object's name.
 
-	private List<Image> objDisplayP;
-	private List<Text> objNameP;
+	public ToggleScript toggleScript;								// reference to script used to toggle the quiz object images when the user taps them
+	public NameToggleScript nameToggleScript;						// same but for text
 
-	public ToggleScript toggleScript;
-	public NameToggleScript nameToggleScript;
+	public ToggleGroup imageToggleGroup;							// toggle group for images
+	public ToggleGroup nameToggleGroup;								// toggle group for names
 
-	public ToggleGroup imageToggleGroup;
-	public ToggleGroup nameToggleGroup;
+	List<Color> randColors = new List<Color>(new Color[] {Color.blue, Color.green, Color.cyan, Color.magenta, Color.yellow});	// list of colours used when setting correctly connected items. can't just use green 'cause then they all look the same
+	private AudioSource aSource;	// audio source
+	public AudioClip correct, wrong;	// audio clips depending on if the user got the answer correct or not
 
-	List<Color> randColors = new List<Color>(new Color[] {Color.blue, Color.green, Color.cyan, Color.magenta, Color.yellow});
-	private AudioSource aSource;
-	public AudioClip correct, wrong;
+	int answeredCorrectly = 0;	// how many questions have been answered correctly so far
 
-	int answeredCorrectly = 0;
-
-	public GameObject nextPanelButton;
+	public GameObject nextPanelButton;	// button to go to the next scene, activates once all questions are answered
 
 	void Start () 
 	{
-		objNameP = objName;
-		objDisplayP = objDisplay;
-		Debug.Log(objDisplayP.Count);
-		RandomiseEntries();
-		Debug.Log(objDisplayP.Count);
-		aSource = GetComponent<AudioSource>();
+		RandomiseEntries();	// randomise the questions and answers
+		aSource = GetComponent<AudioSource>();	// get reference to audio source
 	}
 	
 
 	void RandomiseEntries()
 	{
+
+		// fisher yates shuffle
 		int n = objDisplay.Count;
 		while(n > 1)
 		{
@@ -48,14 +45,14 @@ public class QuizController : MonoBehaviour {
 			int k = Random.Range(0, n + 1);
 			int k2 = Random.Range(0, n + 1);
 
-			var displayValue = objDisplayP[k];
-			var nameValue = objNameP[k2];
+			var displayValue = objDisplay[k];
+			var nameValue = objName[k2];
 
-			objDisplayP[k] = objDisplayP[n];
-			objNameP[k2] = objNameP[n];
+			objDisplay[k] = objDisplay[n];
+			objName[k2] = objName[n];
 
-			objDisplayP[n] = displayValue;
-			objNameP[n] = nameValue;
+			objDisplay[n] = displayValue;
+			objName[n] = nameValue;
 			
 
 		}
@@ -64,23 +61,28 @@ public class QuizController : MonoBehaviour {
 
 	void SetEntries()
 	{
-		for(int i = 0; i < objDisplayP.Count; i++)
+		for(int i = 0; i < objDisplay.Count; i++)
 		{
-			objDisplayP[i].sprite = quiz1[i].objImg;
-			objNameP[i].text = quiz1[i].objName;
-			objDisplayP[i].GetComponent<ValueHolder>().nameValue = quiz1[i].objName;
-      objDisplayP[i].preserveAspect = true;
+			objDisplay[i].sprite = quiz1[i].objImg;
+			objName[i].text = quiz1[i].objName;
+			objDisplay[i].GetComponent<ValueHolder>().nameValue = quiz1[i].objName;
+      		objDisplay[i].preserveAspect = true;
 		}
 	}
 
+
+	// called from the toggles in quiz1
 	public void CompareAnswers(int toggleID)
 	{
+		// if 1 toggle from each group are active, continue.
 		if(toggleScript.toggles[toggleID].isOn || nameToggleScript.toggles[toggleID].isOn)
 		{
 			Debug.Log("compare answers");
-			Toggle iToggle = null;
-			Toggle nToggle = null;
+			Toggle iToggle = null; 	// image toggle that was selected
+			Toggle nToggle = null;	// name toggle that was selected
 			
+
+			// get active toggle and set it to local variable
 			if(nameToggleGroup.ActiveToggles().FirstOrDefault())
 			{
 				nToggle = nameToggleGroup.ActiveToggles().FirstOrDefault();
@@ -91,8 +93,10 @@ public class QuizController : MonoBehaviour {
 				iToggle = imageToggleGroup.ActiveToggles().FirstOrDefault();
 			}
 
+			//if both local toggle variables are set
 			if(nToggle && iToggle)
 			{
+				// if the text in the text component of the name toggle is the same as the string held in the image toggles ValueHolder script, do correct stuff
 				if(nToggle.GetComponentInChildren<Text>().text == iToggle.GetComponent<ValueHolder>().nameValue)
 				{
 					aSource.clip = correct;
@@ -110,7 +114,7 @@ public class QuizController : MonoBehaviour {
 					AllTogglesOff();
 					CorrectlyAnswered();
 				}
-				else
+				else	// else do wrong stuff
 				{
 					aSource.clip = wrong;
 					aSource.Play();
@@ -121,12 +125,14 @@ public class QuizController : MonoBehaviour {
 		}
 	}
 
+	// turn all toggles off
 	void AllTogglesOff()
 	{
 		nameToggleGroup.SetAllTogglesOff();
 		imageToggleGroup.SetAllTogglesOff();
 	}
 
+	// set answered correctly +1 and check if answeredCorrectly is the same as the number of questions
 	void CorrectlyAnswered()
 	{
 		answeredCorrectly++;
@@ -137,6 +143,8 @@ public class QuizController : MonoBehaviour {
 	}
 }
 
+
+// class to hold quiz data
 [System.Serializable]
 public class QuizObjects
 {
