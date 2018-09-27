@@ -5769,7 +5769,7 @@ MonoBehaviour:
   - objectImage: {fileID: 21300000, guid: 8cc23303233f64641ab960660a9f23b5, type: 3}
     objectDescription: "\u5E8A\u5355"
     objectAudio: {fileID: 8300000, guid: 85f2466e9dbb4df4d8711f1e5a5a5910, type: 3}
-  gController: {fileID: 1933990124}
+  panelController: {fileID: 1933990124}
 --- !u!114 &1933990128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5841,7 +5841,7 @@ MonoBehaviour:
   - {fileID: 1267044220}
   - {fileID: 1332518015}
   - {fileID: 2010334830}
-  gController: {fileID: 1933990124}
+  panelController: {fileID: 1933990124}
   questionImageDisplay: {fileID: 2015850060}
   wrongAnswerPanel: {fileID: 539752108}
 --- !u!114 &1933990129
